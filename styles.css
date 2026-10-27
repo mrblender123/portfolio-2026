@@ -1,4 +1,5 @@
 /* The supplied visual design lives in reference.css; native interactions live here. */
+@font-face { font-family: 'Funnel Sans'; src: url('assets/fonts/funnel-sans-variable.ttf') format('truetype'); font-weight: 300 800; font-style: normal; font-display: swap; }
 :root { --ink: #212514; --paper: #fffff5; --lavender: #ecc8ff; --button-hover: #d4d4d4; --media-radius: 10px; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body { margin: 0; background: var(--paper); }
@@ -34,7 +35,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .framer-VYd9Q #hero.home-hero { display: block; width: 100%; height: auto; padding: 180px 80px 100px; box-sizing: border-box; }
 .home-hero-inner { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); align-items: start; gap: 48px; max-width: 1440px; margin: 0 auto; }
 .home-hero-copy { container-type: inline-size; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
-.home-hero-name { margin: 0; color: var(--ink); font-family: 'RealHeadWebW04-Black Regular',sans-serif; font-weight: 900; font-size: clamp(60px,18cqi,160px); font-kerning: normal; letter-spacing: .012em; line-height: 1.06; }
+.home-hero-name { margin: 0; color: var(--ink); font-family: 'Funnel Sans',sans-serif; font-weight: 500; font-style: normal; font-size: clamp(60px,18cqi,160px); font-kerning: normal; letter-spacing: -.05em; line-height: 1.1; }
 .home-hero-name span { display: block; }
 .home-hero-intro { max-width: 580px; margin: 26px 0 0; font: 20px/1.6 'PP Neue Montreal Book',sans-serif; color: var(--ink); }
 .home-hero-intro strong,.home-hero-intro a { font-family: 'PP Neue Montreal Bold',sans-serif; font-weight: 700; }
