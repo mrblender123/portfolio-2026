@@ -1,17 +1,33 @@
-# Fasteners Depot
+# Torah Times
 
-<!-- Add supplied project copy here when ready. Empty sections stay hidden. -->
+<!-- Fill these sections in one document. Empty sections stay hidden on the page. -->
 
 ## Overview
 
-**As the lead graphic designer for Fasteners and its sub-brand Tungstan, I oversaw and created packaging and labels across an extensive range of thousands of products. I developed a consistent design approach that accommodated individual product requirements while keeping the range cohesive and clearly organized.**
+As Torah Times prepared to introduce their new identity, I helped shape how the rebrand would be revealed through motion. I translated the visual language into a cohesive animated narrative, using rhythm, transitions, and composition to build anticipation and give the launch a distinctive voice.
 
-My responsibilities extended across email campaigns, flyers, catalog design and pagination, expo materials, and booth design. I also established systems to organize product information and design assets, streamline production, and maintain consistency across both brands. As their primary creative partner, I managed everyday design needs alongside larger marketing and exhibition projects.
+## Problem
+
+## Solution
+
+## My involvement
 
 ## Deliverables
 
 ## Type
 
-## 04 — Booth Design
+## 02 — Final video
 
-## 07 — motion graphic
+## 03 — Selected motion details
+
+A closer look at the rhythm, transitions, and composition that bring the launch film together.
+
+## 07 — Behind the scenes
+
+<!-- Numbered headings go with the matching media group:
+## 02 — Research & rationale
+Your explanation here.
+
+## 03 — Design development
+Your explanation here.
+-->
