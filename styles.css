@@ -35,7 +35,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .framer-VYd9Q #hero.home-hero { display: block; width: 100%; height: auto; padding: 180px 80px 100px; box-sizing: border-box; }
 .home-hero-inner { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); align-items: start; gap: 48px; max-width: 1440px; margin: 0 auto; }
 .home-hero-copy { container-type: inline-size; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
-.home-hero-name { margin: 0; color: var(--ink); font-family: 'Funnel Sans',sans-serif; font-weight: 500; font-style: normal; font-size: clamp(60px,18cqi,160px); font-kerning: normal; letter-spacing: -.05em; line-height: 1.1; }
+.home-hero-name { margin: 0; color: var(--ink); font-family: 'Funnel Sans',sans-serif; font-weight: 667; font-style: normal; font-size: clamp(60px,18cqi,160px); font-kerning: normal; letter-spacing: -.05em; line-height: 1.1; }
 .home-hero-name span { display: block; }
 .home-hero-intro { max-width: 580px; margin: 26px 0 0; font: 20px/1.6 'PP Neue Montreal Book',sans-serif; color: var(--ink); }
 .home-hero-intro strong,.home-hero-intro a { font-family: 'PP Neue Montreal Bold',sans-serif; font-weight: 700; }
