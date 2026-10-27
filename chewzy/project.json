@@ -1,0 +1,51 @@
+{
+  "title": "Chewzy",
+  "id": "starbucks",
+  "output": "chewzy.html",
+  "description": "Chewzy — a design project by Yitzchok Cheshin.",
+  "cover": {
+    "src": "assets/chewzy-opening-v2.png",
+    "alt": "White Chewzy logo and Treats of Choice tagline on a soft pink gradient background"
+  },
+  "next": "oooomami",
+  "mediaOptions": {
+    "02-final-video.mp4": {
+      "poster": "assets/chewzy-final-video-poster.jpg",
+      "alt": "Chewzy candy launch final advertisement",
+      "controls": true,
+      "presentation": "portrait",
+      "ambient": true,
+      "width": 608,
+      "height": 1080,
+      "playback": "film"
+    },
+    "03-snippet-1.mp4": {
+      "poster": "assets/chewzy-snippet-1-v2-poster.jpg",
+      "alt": "Chewzy animation snippet 1",
+      "presentation": "compact",
+      "width": 1200,
+      "height": 1200
+    },
+    "04-snippet-2.mp4": {
+      "poster": "assets/chewzy-snippet-2-poster.jpg",
+      "alt": "Chewzy animation snippet 2",
+      "presentation": "compact",
+      "width": 1200,
+      "height": 1200
+    },
+    "05-snippet-3.mp4": {
+      "poster": "assets/chewzy-snippet-3-poster.jpg",
+      "alt": "Chewzy animation snippet 3",
+      "presentation": "compact",
+      "width": 1200,
+      "height": 1200
+    },
+    "06-snippet-4.mp4": {
+      "poster": "assets/chewzy-snippet-4-poster.jpg",
+      "alt": "Chewzy animation snippet 4",
+      "presentation": "compact",
+      "width": 1200,
+      "height": 1200
+    }
+  }
+}
