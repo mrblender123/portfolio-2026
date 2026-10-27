@@ -1,0 +1,9 @@
+{
+  "title": "Project title",
+  "id": "template-preview",
+  "output": "project-template-preview.html",
+  "preview": true,
+  "description": "Reusable project layout based on the saved portfolio reference.",
+  "previous": "starbucks",
+  "next": "clyk"
+}

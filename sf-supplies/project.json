@@ -1,0 +1,33 @@
+{
+  "title": "S&F Supplies",
+  "id": "was-games",
+  "output": "sf-supplies.html",
+  "description": "S&F Supplies — a design project by Yitzchok Cheshin.",
+  "cover": {
+    "src": "projects/sf-supplies/media/01-cover-v5.png",
+    "alt": "S&F Supplies blue logo on white framed by a blue border"
+  },
+  "previous": "skin-and-me",
+  "mediaOptions": {
+    "05-packaging-on-shelf.png": {
+      "alt": "Three blue S&F Supplies packaging boxes displayed on a store shelf"
+    },
+    "03-packaging-dieline.png": {
+      "alt": "S&F Supplies blue box packaging dieline beside two assembled branded boxes"
+    },
+    "02-pair-a.mp4": {
+      "alt": "S&F Supplies packaging animation detail one",
+      "width": 1280,
+      "height": 1280,
+      "controls": true,
+      "poster": "assets/sf-supplies-detail-02-poster.jpg"
+    },
+    "02-pair-b.mp4": {
+      "alt": "S&F Supplies packaging animation detail two",
+      "width": 1280,
+      "height": 1280,
+      "controls": true,
+      "poster": "assets/sf-supplies-detail-03-poster.jpg"
+    }
+  }
+}
