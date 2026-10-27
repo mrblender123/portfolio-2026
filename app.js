@@ -191,6 +191,15 @@
       if(tags && !project.tags.length) tags.remove();
       if(tags && project.tags.length) [...tags.children].forEach((group,i)=>all('p',group).forEach(p=>p.textContent=project.tags[i]||''));
       all('img',card).forEach(image=>{image.src=project.image;image.alt='';});
+      if(project.video && !card.querySelector('video')) {
+        all('.framer-paow2q',card).forEach(poster=>{
+          const media=el('div','framer-N5zll project-thumbnail-video');
+          const video=el('video');
+          video.preload='metadata';
+          video.setAttribute('aria-label',`${project.title} animated thumbnail`);
+          media.append(video);poster.append(media);
+        });
+      }
       all('video',card).forEach(video=>{
         // Retain the original large-desktop/tablet video crops until media is replaced.
         const original=video.getAttribute('src');
@@ -207,10 +216,14 @@
         if(!project.video)media.remove();
       });
       if(index===5){
-        card.classList.add('shell-card'); card.tabIndex=0;
-        card.setAttribute('aria-label',`${project.title}. ${project.overlay.replaceAll('\n',' ')}`);
+        card.tabIndex=0;
+        card.setAttribute('aria-label',project.title);
         all('.framer-fDg33',card).forEach(node=>node.remove());
-        all('.framer-paow2q',card).forEach(media=>media.append(el('div','shell-overlay',project.overlay)));
+        if(project.overlay) {
+          card.classList.add('shell-card');
+          card.setAttribute('aria-label',`${project.title}. ${project.overlay.replaceAll('\n',' ')}`);
+          all('.framer-paow2q',card).forEach(media=>media.append(el('div','shell-overlay',project.overlay)));
+        }
       }
     });
   });

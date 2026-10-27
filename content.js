@@ -54,10 +54,9 @@ window.PORTFOLIO = {
       description: '', tags: [],
       image: 'assets/sf-supplies-thumbnail-v4-poster.jpg',
       video: 'assets/sf-supplies-thumbnail-pingpong-v4.mp4', href: './sf-supplies.html' },
-    { id: 'shell', title: 'SHELL (COMING SOON)', menuTitle: 'Shell Energy', hidden: true,
-      description: 'Rebranding Shell Energy to feel smarter, warmer, and more human',
-      tags: ['360 Campaign', 'Social Media', 'UX & UI'],
-      image: 'assets/gopmUpfio8ylckITcDS1ixBLI8.png', video: '', href: '',
-      overlay: 'FULL CASE STUDY\nAVAILABLE ON REQUEST' }
+    { id: 'cici', title: 'CICI', menuTitle: 'Cici',
+      description: '', tags: [],
+      image: 'assets/cici-thumbnail-poster.jpg',
+      video: 'assets/cici-thumbnail-pingpong.mp4', href: '' }
   ]
 };

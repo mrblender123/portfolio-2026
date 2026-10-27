@@ -1,0 +1,54 @@
+{
+  "title": "Fasteners Depot",
+  "id": "clyk",
+  "output": "fasteners-depot.html",
+  "description": "Fasteners Depot — a design project by Yitzchok Cheshin.",
+  "cover": {
+    "src": "projects/fasteners-depot/media/01-cover-v3.png",
+    "alt": "Fasteners Depot logo on a dark background with metallic fasteners and the Tungsten sub-brand logo"
+  },
+  "previous": "oooomami",
+  "next": "skin-and-me",
+  "mediaOptions": {
+    "02-packaging-system-v2.png": {
+      "alt": "Tungsten packaging system with coordinated box sizes, branding close-ups, and a flat packaging dieline"
+    },
+    "03-label-system-v2.png": {
+      "alt": "Tungsten label system showing product label sizes, print production, and labels applied to packaging"
+    },
+    "04-booth-showcase.png": {
+      "alt": "Tungsten and Fasteners Depot booth in an exhibition hall with yellow and red branding, a product display, counter, and seating"
+    },
+    "09-pair-b.png": {
+      "alt": "Fasteners Depot folded brochure with metallic fixings and red accents"
+    },
+    "09-pair-a.png": {
+      "alt": "Tungsten folded brochure with yellow accents and product imagery"
+    },
+    "08-motion-video.mp4": {
+      "alt": "Fasteners Depot project video",
+      "controls": true,
+      "width": 474,
+      "height": 850,
+      "presentation": "portrait",
+      "poster": "assets/fasteners-motion-07-poster.jpg",
+      "caption": "live video from show",
+      "ambient": true
+    },
+    "06-trade-show-booth.png": {
+      "alt": "Tungsten and Fasteners Depot trade show booth design with yellow and red branding, product displays, an illuminated sign, and a branded counter"
+    },
+    "05-booth-design-process.png": {
+      "alt": "Booth design process showing spatial planning, dual-brand architecture, functional components, and final Tungsten and Fasteners Depot booth visualization"
+    },
+    "07-motion-graphic-web.mp4": {
+      "alt": "Fasteners Depot motion graphic video",
+      "controls": true,
+      "width": 1080,
+      "height": 1920,
+      "presentation": "portrait",
+      "poster": "assets/fasteners-motion-poster.jpg",
+      "ambient": true
+    }
+  }
+}

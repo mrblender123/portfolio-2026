@@ -67,6 +67,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .project-card { opacity: 1; transform: none; }
 .project-card .project-media video { opacity: 0; transition: opacity .2s; }
 .project-card .project-media video.is-ready { opacity: 1; }
+.project-thumbnail-video { position: absolute; inset: 0; overflow: hidden; border-radius: var(--media-radius); }
+.project-thumbnail-video video { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: var(--media-radius); }
 .project-card.has-vignette-glow > [data-framer-name="Frame 11"]::after {
  content: ''; position: absolute; inset: 0; z-index: 5; pointer-events: none;
  border-radius: var(--media-radius);

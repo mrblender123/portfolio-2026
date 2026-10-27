@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+dist/
+artifacts/
+tmp/
+publish-ready/
+aimee_jacobs_clone/
+projects/*/archive/
+.sites-runtime/
+.sites-checkout*/
+*.tar.gz
