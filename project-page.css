@@ -1,0 +1,130 @@
+/* The saved OOOOmami reference supplies these measurements and type styles.
+   One stylesheet controls every project, so swapping content keeps the design. */
+.project-page { --case-ink: #4d4d4d; --case-copy: #595760; padding-top: 100px; color: var(--case-ink); font-family: 'PP Neue Montreal Medium', sans-serif; font-size: 18px; line-height: 1.3; }
+.project-page *, .project-page *::before, .project-page *::after { box-sizing: border-box; }
+.project-container { width: 100%; max-width: 1200px; margin-inline: auto; padding-inline: 80px; }
+.project-title { font: 500 48px/1.3 'Real Head Pro Medium', sans-serif; margin: 0; padding: 0 0 10px; color: var(--case-ink); }
+.project-cover { margin: 0; border-radius: var(--media-radius); overflow: hidden; background: transparent; }
+.project-cover img { display: block; width: 100%; height: auto; }
+.project-overview { display: grid; grid-template-columns: 2fr 1fr; gap: 40px; padding: 20px 0 46px; border-bottom: 1px solid #d4d4d4; }
+.project-overview-main { display: grid; align-content: start; gap: 24px; }
+.project-overview-side { display: grid; align-content: start; gap: 20px; }
+.project-page h2, .project-page h3 { font: 500 20px/1.3 'PP Neue Montreal Medium', sans-serif; margin: 0 0 16px; color: var(--case-ink); }
+.project-page p { color: var(--case-copy); margin: 0; }
+.project-page p + p { margin-top: 16px; }
+.project-page strong { font-family: 'PP Neue Montreal Bold', sans-serif; }
+.project-page ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 3px; color: var(--case-copy); }
+.project-page li::before { content: '• '; }
+.project-section { padding-top: 40px; }
+.project-section:first-child { padding-top: 10px; }
+.project-section-heading { border-top: 1px solid #d4d4d4; padding: 20px 0; }
+.project-section-heading h2:last-child { margin-bottom: 0; }
+.project-section-heading p { max-width: 100%; }
+.project-media { margin: 0; min-width: 0; overflow: hidden; border-radius: var(--media-radius); }
+.project-media img, .project-media video { display: block; width: 100%; height: auto; }
+.project-media video { background: transparent; }
+.project-media--portrait, .project-media--compact { width: 100%; margin-inline: auto; }
+@media(min-width:768px) {
+ .project-media--compact { max-width: 600px; }
+ .project-media-ambient { position: relative; isolation: isolate; padding: 32px 24px; border-radius: var(--media-radius); }
+ .project-media-ambient::before {
+  content: ''; position: absolute; inset: -32px -24px; z-index: -1; pointer-events: none;
+  background: var(--ambient-image) center / cover no-repeat;
+  filter: blur(64px) saturate(1.5); opacity: .4;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, transparent 78%);
+  mask-image: radial-gradient(ellipse at center, #000 20%, transparent 78%);
+ }
+ .project-media-ambient--color::before { background: var(--ambient-color); }
+ .project-media--portrait {
+  width: min(100%, 400px, calc(75vh * var(--media-aspect)));
+  width: min(100%, 400px, calc(75svh * var(--media-aspect)));
+ }
+}
+.project-media figcaption { padding: 12px 0 40px; color: var(--case-copy); }
+.project-media figcaption strong { display: block; color: var(--case-ink); margin-bottom: 8px; }
+.project-media-stack { display: grid; gap: 10px; }
+.project-pair { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+.project-pair .project-media img, .project-pair .project-media video { height: 100%; object-fit: contain; }
+.project-pair .project-media:has(figcaption) img, .project-pair .project-media:has(figcaption) video { height: auto; }
+.project-gallery { position: relative; margin: 0; }
+.project-gallery-track { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; gap: 10px; border-radius: var(--media-radius); }
+.project-gallery-track::-webkit-scrollbar { display: none; }
+.project-gallery-track > .project-media { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+.project-gallery-track img, .project-gallery-track video { aspect-ratio: 1.85949; object-fit: contain; }
+.project-gallery-controls { display: flex; justify-content: space-between; align-items: center; padding-top: 14px; }
+.project-gallery-controls button { width: 36px; height: 36px; border: 1px solid #d4d4d4; border-radius: 50%; color: var(--case-ink); background: transparent; cursor: pointer; font: 20px/1 sans-serif; transition: background .2s; }
+.project-gallery-controls button:hover { background: #f5d6bd; }
+.project-gallery-controls button:disabled { opacity: .25; cursor: default; }
+.project-gallery-controls [role=status] { font-size: 14px; color: var(--case-copy); font-variant-numeric: tabular-nums; }
+.project-navigation { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border-top: 1px solid #d4d4d4; margin-top: 60px; padding-block: 36px 60px; gap: 40px; }
+.project-navigation a { display: flex; gap: 14px; align-items: center; justify-content: space-between; color: var(--ink); text-decoration: none; font: 500 32px/1.3 'Real Head Pro Medium', sans-serif; }
+.project-navigation a:last-child { text-align: right; }
+.project-navigation span { transition: transform .25s; }
+.project-navigation a:hover span { transform: translateX(5px); }
+.project-navigation a:first-child:hover span { transform: translateX(-5px); }
+.project-layout-note { max-width: 1200px; margin: 0 auto 24px; padding: 0 80px; font: 14px/1.4 'PP Neue Montreal Medium',sans-serif; color: #595760; }
+@media(min-width:768px) and (max-width:1023.98px) {
+ .project-container { padding-inline: 40px; }
+ .project-title { font-size: 40px; }
+ .project-overview { padding-block: 52px 72px; }
+ .project-layout-note { padding-inline: 40px; }
+}
+@media(max-width:767.98px) {
+ .project-page { padding-top: 80px; font-size: 16px; line-height: 1.4; }
+ .project-container { padding-inline: 24px; }
+ .project-title { font-size: 40px; }
+ .project-overview { grid-template-columns: 1fr; gap: 45px; padding: 12px 0 63px; }
+ .project-overview-side { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 32px; }
+ .project-page h2, .project-page h3 { font-size: 18px; }
+ .project-section { padding-top: 24px; }
+ .project-section:first-child { padding-top: 16px; }
+ .project-pair { grid-template-columns: 1fr; }
+ .project-media figcaption { padding-bottom: 5px; }
+ .project-navigation { gap: 24px; margin-top: 40px; padding-block: 24px 40px; }
+ .project-navigation a { font-size: 22px; }
+ .project-layout-note { padding-inline: 24px; }
+}
+@media(prefers-reduced-motion:reduce) { .project-gallery-track { scroll-behavior: auto; } }
+
+/* Frame out transparent PNG margins without changing the source image. */
+.project-cover--framed { position: relative; }
+.project-cover--framed img { position: absolute; max-width: none; border-radius: 0; }
+
+/* Every overview ends with one shared divider, including future projects. */
+.project-container:has(> .project-overview) + .project-container > .project-section:first-child > .project-section-heading { border-top: 0; }
+.project-container:has(> .project-overview) + .project-container:empty + .project-container .project-navigation { border-top: 0; }
+
+.project-section-divider { border: 0; border-top: 1px solid #d4d4d4; margin: 32px 0 0; width: 100%; }
+.project-section:has(> .project-section-divider) + .project-section > .project-section-heading { border-top: 0; }
+
+/* Match the reference's initial page entrance after a project-card click:
+   24 px upward fade, 800 ms, staggered at 100 / 200 / 300 ms. */
+@keyframes project-enter {
+  from { opacity: .001; translate: 0 24px; }
+  to { opacity: 1; translate: 0 0; }
+}
+.project-title, .project-cover, .project-overview {
+  animation: project-enter .8s cubic-bezier(.44,0,.56,1) backwards;
+}
+.project-title { animation-delay: .1s; }
+.project-cover { animation-delay: .2s; }
+.project-overview { animation-delay: .3s; }
+@media(prefers-reduced-motion:reduce) {
+  .project-title, .project-cover, .project-overview { animation: none; }
+}
+
+/* Main films invite a deliberate start with music. */
+.project-film-frame { position: relative; overflow: hidden; border-radius: var(--media-radius); }
+.project-film-start {
+ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+ display: flex; align-items: center; gap: 14px; justify-content: center;
+ width: max-content; max-width: calc(100% - 24px); padding: 16px 24px;
+ border: 1px solid #fffff559; border-radius: 999px; background: #212514eb;
+ color: #fffff5; box-shadow: 0 4px 24px #0003; cursor: pointer;
+ font: 18px/1.2 'PP Neue Montreal Medium', sans-serif; text-align: left;
+ transition: background .2s, box-shadow .2s;
+}
+.project-film-start:hover { background: #212514; box-shadow: 0 6px 28px #0005; }
+.project-film-start[hidden] { display: none; }
+.project-film-play-icon { font-size: 18px; }
+.project-film-frame video { border-radius: var(--media-radius); }
