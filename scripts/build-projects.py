@@ -129,6 +129,8 @@ def build(folder,portfolio):
             groups[match[1]].append(file.relative_to(ROOT).as_posix())
     if len(groups.get('01',[])) > 1: raise ValueError('Use only one 01-cover file.')
     cover = (groups.get('01') or [None])[0] or data.get('cover')
+    if isinstance(cover,str) and isinstance(data.get('cover'),dict):
+        cover = dict(data['cover'],src=cover)
     if not cover: raise ValueError('Add 01-cover to the media folder or set cover in project.json.')
     numbered = {}
     for label,body in copy.items():

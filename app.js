@@ -114,11 +114,10 @@
     document.querySelector('.framer-15dlpq1 p').textContent = site.about.button;
   }
 
-  // Use the reference's exact logo, with semantic, keyboard-accessible navigation.
-  const logoArtwork = document.querySelector('.framer-oj9zzu').cloneNode(true);
+  // Personal wordmark with semantic, keyboard-accessible navigation.
   const header = el('header','site-header');
   const navInner = el('div','nav-inner');
-  const logo = link('', homeUrl,'site-logo'); logo.setAttribute('aria-label','Home'); logo.append(logoArtwork);
+  const logo = link(`${site.firstName} ${site.lastName}`,homeUrl,'site-logo'); logo.setAttribute('aria-label','Home');
   const toggle = el('button','menu-toggle'); toggle.type = 'button'; toggle.setAttribute('aria-label','Open menu'); toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-controls','site-nav'); toggle.append(el('span'));
   const nav = el('nav','site-nav'); nav.id = 'site-nav'; nav.setAttribute('aria-label','Main navigation');
   const work = el('div','work-menu');
@@ -178,10 +177,16 @@
     const cards=all(index===5?'.framer-8bwrpg':`a[data-project="${project.id}"]`);
     cards.forEach(card=>{
       if (project.hidden) { card.remove(); return; }
+      if(project.href && card.tagName!=='A') {
+        const anchor=el('a');
+        [...card.attributes].forEach(attribute=>anchor.setAttribute(attribute.name,attribute.value));
+        anchor.append(...card.childNodes);
+        card.replaceWith(anchor);card=anchor;
+      }
       card.classList.add('project-card');
       card.classList.toggle('has-vignette-glow', project.thumbnailEffect === 'vignette-glow');
       card.dataset.projectId = project.id;
-      if(index!==5) {
+      if(project.href) {
         card.href=project.href;
         if (!/^https?:/.test(project.href)) { card.removeAttribute('target'); card.removeAttribute('rel'); }
       }

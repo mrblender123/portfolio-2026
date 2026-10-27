@@ -1,0 +1,22 @@
+{
+  "title": "CIC Carpet Cleaning",
+  "id": "cic",
+  "output": "cic.html",
+  "description": "CIC Carpet Cleaning \u2014 graphics and brand applications by Yitzchok Cheshin.",
+  "cover": {
+    "src": "projects/cic/media/01-cover.png",
+    "alt": "CIC Carpet Cleaning logo in turquoise and light aqua"
+  },
+  "previous": "was-games",
+  "mediaOptions": {
+    "02-color-palette.png": {
+      "alt": "CIC logo beside turquoise, light aqua, and white brand colors"
+    },
+    "03-van-graphics.png": {
+      "alt": "CIC Carpet Cleaning branded service van with cleaning services and contact information"
+    },
+    "04-upholstery-cleaning.jpg": {
+      "alt": "CIC technician cleaning a sofa with an upholstery extraction wand"
+    }
+  }
+}

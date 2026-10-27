@@ -2,7 +2,7 @@
   "title": "S&F Supplies",
   "id": "was-games",
   "output": "sf-supplies.html",
-  "description": "S&F Supplies — a design project by Yitzchok Cheshin.",
+  "description": "S&F Supplies \u2014 a design project by Yitzchok Cheshin.",
   "cover": {
     "src": "projects/sf-supplies/media/01-cover-v5.png",
     "alt": "S&F Supplies blue logo on white framed by a blue border"
@@ -29,5 +29,6 @@
       "controls": true,
       "poster": "assets/sf-supplies-detail-03-poster.jpg"
     }
-  }
+  },
+  "next": "cic"
 }

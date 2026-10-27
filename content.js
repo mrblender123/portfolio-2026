@@ -54,9 +54,9 @@ window.PORTFOLIO = {
       description: '', tags: [],
       image: 'assets/sf-supplies-thumbnail-v4-poster.jpg',
       video: 'assets/sf-supplies-thumbnail-pingpong-v4.mp4', href: './sf-supplies.html' },
-    { id: 'cici', title: 'CICI', menuTitle: 'Cici',
+    { id: 'cic', title: 'CIC CARPET CLEANING', menuTitle: 'CIC Carpet Cleaning',
       description: '', tags: [],
       image: 'assets/cici-thumbnail-poster.jpg',
-      video: 'assets/cici-thumbnail-pingpong.mp4', href: '' }
+      video: 'assets/cici-thumbnail-pingpong.mp4', href: './cic.html' }
   ]
 };
