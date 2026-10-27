@@ -1,5 +1,5 @@
 /* The supplied visual design lives in reference.css; native interactions live here. */
-:root { --ink: #212514; --paper: #fffff5; --lavender: #ecc8ff; --media-radius: 10px; }
+:root { --ink: #212514; --paper: #fffff5; --lavender: #ecc8ff; --button-hover: #d4d4d4; --media-radius: 10px; }
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body { margin: 0; background: var(--paper); }
 button, a { -webkit-tap-highlight-color: transparent; }
@@ -41,7 +41,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .home-hero-intro a { color: inherit; text-decoration: none; overflow-wrap: anywhere; }
 .home-hero-intro a:hover { text-decoration: underline; }
 .home-hero-contact { display: inline-flex; align-items: center; justify-content: center; margin-top: 32px; padding: 16px 32px; border-radius: 999px; background: var(--ink); color: white; text-decoration: none; font: 18px/1.25 'PP Neue Montreal Medium',sans-serif; transition: background-color .25s,color .25s; }
-.home-hero-contact:hover { background: var(--lavender); color: var(--ink); }
+.home-hero-contact:is(:hover,:focus-visible) { background: var(--button-hover); color: var(--ink); }
 .home-hero-media { width: 100%; aspect-ratio: 7/6; margin: 6px 0 0; overflow: hidden; border-radius: var(--media-radius); mix-blend-mode: darken; }
 .home-hero-media video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: var(--media-radius); transform: scale(1.02); }
 @media(max-width:1199.98px) {
@@ -58,7 +58,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
  .home-hero-intro { order: 3; margin: 0; font-size: 17px; line-height: 1.5; }
  .home-hero-contact { order: 4; justify-self: start; margin: 0; }
 }
-.framer-1BOPF .framer-1xsaogo { transition: bottom .4s cubic-bezier(.2,.7,.3,1), width .4s, left .4s; }
+.framer-1BOPF .framer-1xsaogo { background-color: var(--button-hover) !important; transition: bottom .4s cubic-bezier(.2,.7,.3,1), width .4s, left .4s; }
 .framer-1BOPF .framer-15dlpq1 p { transition: color .25s; }
 .framer-1BOPF:is(:hover,:focus-visible) .framer-1xsaogo { width: 124%; bottom: -37px; left: -12.3377%; }
 .framer-1BOPF:is(:hover,:focus-visible) .framer-15dlpq1 p { color: var(--ink) !important; }
