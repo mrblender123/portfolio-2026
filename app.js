@@ -97,20 +97,6 @@
       paragraph.forEach(part => biography.append(typeof part === 'string'
         ? document.createTextNode(part) : el('strong','about-emphasis',part.emphasis)));
     });
-    const portrait = document.querySelector('.framer-1vt5o8r img');
-    portrait.src = site.about.portrait; portrait.alt = site.about.portraitAlt;
-    if (site.about.portraitType === 'animated-image') {
-      portrait.closest('.framer-2gkq0x').classList.add('about-character','about-standing');
-      portrait.style.objectFit = 'contain';
-    }
-    if (site.about.portraitVideo) {
-      const video = el('video','about-character-video');
-      video.src = site.about.portraitVideo; video.poster = site.about.portrait;
-      video.muted = true; video.loop = true; video.playsInline = true; video.preload = 'metadata';
-      video.setAttribute('aria-label',site.about.portraitAlt);
-      portrait.closest('.framer-2gkq0x').classList.add('about-character');
-      portrait.replaceWith(video);
-    }
     document.querySelector('.framer-15dlpq1 p').textContent = site.about.button;
   }
 

@@ -27,10 +27,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .work-list img { width: 30px; height: 30px; object-fit: cover; border-radius: 7px; }
 .menu-toggle, .mobile-home { display: none; }
 .about-emphasis { font-family: 'PP Neue Montreal Bold', sans-serif; font-weight: 700; color: var(--ink); }
-.framer-4j2qw .framer-2gkq0x.about-character { aspect-ratio: 1; padding: 0; mix-blend-mode: multiply; }
-.framer-4j2qw .framer-2gkq0x.about-standing { aspect-ratio: 3 / 4; }
-.framer-1uo7mgz:has(.about-character) { mix-blend-mode: multiply; }
-.about-character-video { display: block; width: 100%; height: 100%; object-fit: contain; }
+.framer-4j2qw .framer-1uo7mgz { max-width: 1120px; }
+.framer-4j2qw .framer-10bral2 { flex: none; width: 100%; max-width: 800px; }
+.framer-4j2qw .framer-1jhzsyd { max-width: 720px; }
 .framer-VYd9Q #hero.home-hero { display: block; width: 100%; height: auto; padding: 180px 80px 100px; box-sizing: border-box; }
 .home-hero-inner { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); align-items: start; gap: 48px; max-width: 1440px; margin: 0 auto; }
 .home-hero-copy { container-type: inline-size; display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }

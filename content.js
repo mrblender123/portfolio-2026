@@ -13,7 +13,7 @@ window.PORTFOLIO = {
   email: 'Bycheshin@gmail.com',
   linkedin: '',
   aboutUrl: './about.html',
-  // Reference biography and portrait; replace these with your own details.
+  // About-page copy.
   about: {
     label: 'Get to know me',
     headline: 'The best work starts with understanding people.',
@@ -22,9 +22,6 @@ window.PORTFOLIO = {
       ["I've built strong experience across digital, brand, motion, and 3D design. Now I work as a freelance designer and creative partner for companies that need thoughtful ideas, effective design, and a consistent visual direction."],
       ["I'm always curious about new technologies and how they can push creative ideas further. I enjoy exploring new places, learning new things, and finding inspiration along the way."]
     ],
-    portrait: 'assets/character-waving.svg?v=2',
-    portraitType: 'animated-image',
-    portraitAlt: 'Animated character standing, waving and blinking',
     button: 'Lets work together 💌'
   },
   heroButton: "Let's Talk!",
