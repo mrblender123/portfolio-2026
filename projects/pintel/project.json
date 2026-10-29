@@ -2,7 +2,7 @@
   "title": "Pintel",
   "id": "skin-and-me",
   "output": "pintel.html",
-  "description": "Pintel — a design project by Yitzchok Cheshin.",
+  "description": "Pintel \u2014 a design project by Yitzchok Cheshin.",
   "cover": {
     "src": "projects/pintel/media/01-cover-v2.png",
     "alt": "Pintel Creative Design logo with a soft blue glow on a dark background"
@@ -16,9 +16,6 @@
     "04-logo-construction-v2.png": {
       "alt": "Pintel logo construction showing letter proportions, alignment guides, and spacing on a dark blue background"
     },
-    "02-brand-application-v2.png": {
-      "alt": "Pintel brand application on a smartphone against a dark blue rocky background"
-    },
     "05-logo-animation-v3.mp4": {
       "alt": "Pintel animated logo",
       "controls": true,
@@ -29,6 +26,9 @@
       "poster": "assets/pintel-animation-v3-poster.jpg",
       "ambientColor": "#8968DF",
       "playback": "film"
+    },
+    "02-brand-application-v3.png": {
+      "alt": "Pintel brand application on a smartphone against a dark blue rocky background"
     }
   }
 }
