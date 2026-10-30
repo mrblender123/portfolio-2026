@@ -4,9 +4,9 @@ window.PORTFOLIO = {
   firstName: 'Yitzchok',
   lastName: 'Cheshin',
   heroMedia: {
-    video: 'assets/character-typing-waving-v3.mp4',
-    poster: 'assets/character-typing-waving-v3-poster.jpg',
-    alt: 'Animated character typing on a laptop and waving'
+    video: 'assets/home-hero-v4.mp4',
+    poster: 'assets/home-hero-v4-poster.jpg',
+    alt: 'Animated designer working at a desk with multiple screens'
   },
   introLead: 'Brand designer,',
   intro: 'Exploring smart and playful ideas through design, strategy, AI and motion. Open to full-time roles. Drop me a line:',
