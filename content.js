@@ -4,7 +4,7 @@ window.PORTFOLIO = {
   firstName: 'Yitzchok',
   lastName: 'Cheshin',
   heroMedia: {
-    video: 'assets/home-hero-v4.mp4',
+    video: 'assets/home-hero-v4-pingpong.mp4',
     poster: 'assets/home-hero-v4-poster.jpg',
     alt: 'Animated designer working at a desk with multiple screens'
   },
